@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Creative</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.2.0/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.css" rel="stylesheet"/>
+
+    <script src="js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--------------------------------NAVIGATION--------------------------------->
+    <nav id="sidebar">
+
+        <div class="navig">
+
+            <div class="logo">
+                <a href="#" class="logo" id="logo">
+                    <img src="img/CREAT1.svg" alt="" style="width: 150px;">
+                </a>
+            </div>
+
+            <ul class="navigation">
+                <li><a class="active nav-link" href="#"><i class="fa-sharp fa-solid fa-chart-pie"></i><span>Dashboard</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-solid fa-user"></i><span>User Profile</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-solid fa-clipboard-list"></i><span>table list</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-brands fa-typo3"></i><span>typography</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-solid fa-icons"></i><span>icons</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-solid fa-location-dot"></i><span>maps</span></a></li>
+                <li><a class="hvr-sweep-to-right nav-link" href="#"><i class="fa-sharp fa-solid fa-bell"></i><span>notifications</span></a></li>
+            </ul>
+
+        </div>
+
+        <div class="upgrade hvr-sweep-to-right" id="upgrade">
+            <a href="#"><i class="fa-sharp fa-solid fa-rocket"></i><span>UPGRADE TO PRO</span></a>
+        </div>
+
+        <div class="filter_modal"></div>
+    </nav>
+
+
+
+    <!--------------------------------MAIN--------------------------------->
+     <main id="main">
+    
+    <!--------------------------------HEADER--------------------------------->
+    <header class="scale-in-ver-top">
+
+        <div class="cards">
+            <input type="checkbox" id="check">
+
+            <div class="card card1">
+                <ul>
+                    <label id="btn-nav" onclick="showNavbar()">Dashboard</label>
+                    <li><a class="gauge" href="#"><i class="fa-solid fa-gauge"></i></a></li>
+                    <li class="dropdown"><p class="notifier">5</p><a href="#"><i class="fa-solid fa-earth-americas"></i><i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#"><i class="fa-regular fa-bookmark"></i>Notification 1</a></li>
+                           <li><a href="#"><i class="fa-regular fa-bookmark"></i>Notification 2</a></li>
+                           <li><a href="#"><i class="fa-regular fa-bookmark"></i>Notification 3</a></li>
+                           <li><a href="#"><i class="fa-regular fa-bookmark"></i>Notification 4</a></li>
+                           <li><a href="#"><i class="fa-regular fa-bookmark"></i>Notification 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="notification" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+
+                    <div class="search-form">
+                        <input type="search" id="search-box" placeholder="Search Product here..." required>
+                        <label for="search-box" class="fas fa-search"></label>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="card card2">
+                <ul>
+                    <li class="dropdown"><a href="#">Account<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#"><i class="fa-regular fa-user"></i>View Profile</a></li>
+                            <li><a href="#"><i class="fa-regular fa-message"></i>Messages</a></li>
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>Settings</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#">Dropdown<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#"><i class="fa-regular fa-calendar"></i>Dropdown 1</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>Dropdown 2</a></li>
+                            <li><a href="#"><i class="fa-solid fa-paperclip"></i>Dropdown 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    
+
+    <!---------------------------------SECTIONS START--------------------------------------------->
+    <section class="dash">
+        <div class="content">
+            <div class="cards">
+
+                <div class="card wow fadeInUp" data-wow-delay=".2s">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text">
+                        <p>New Orders</p>
+                        <h3>700</h3>
+                        <small>+ 2% <span>(30 days)</span></small>
+                    </div>
+                </div>
+
+                <div class="card wow fadeInUp" data-wow-delay=".3s">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div class="text">
+                        <p>Total Income</p>
+                        <h3>$150, 710</h3>
+                        <small>+ 7% <span>Incresead</span></small>
+                    </div>
+                </div>
+
+                <div class="card wow fadeInUp" data-wow-delay=".4s">
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="text">
+                        <p>Total Expanse</p>
+                        <h3>$12 720</h3>
+                        <small>- 2% <span>Expense</span></small>
+                    </div>
+                </div>
+
+                <div class="card wow fadeInUp" data-wow-delay=".5s">
+                    <div class="icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="text">
+                        <p>New Clients</p>
+                        <h3>70</h3>
+                        <small>+ 10% <span>Earning</span></small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-------------------------------CHARTS AND TABLE-------------------------------------------->
+    <section class="components">
+
+        <div class="cards-content">
+
+            <div class="cards cards1">
+                <div class="card">
+                    <div class="title">
+                        <h2>Email Statistics</h2>
+                        <p>Last Campaign Performance</p>
+                    </div>
+                    <canvas id="myThirdChart"></canvas>
+                    <div class="card-footer">
+                        <hr>
+                        <small><i class="fa-solid fa-arrows-rotate"></i>Campaign sent two days ago</small>
+                    </div>
+                </div>
+
+                <div id="appCalendar" class="card wow fadeInUp" data-wow-delay=".5s">
+                </div>
+            </div>
+
+            <div class="cards cards2">
+
+                <div class="card">
+                    <div class="title">
+                        <h2>Users Behavior</h2>
+                        <p>24 Hours Performance</p>
+                    </div>
+                    <canvas id="mySecondChart"></canvas>
+                    <div class="card-footer">
+                        <hr>
+                        <small><i class="fa-solid fa-arrows-rotate"></i>Campaign sent one days ago</small>
+                    </div>
+                </div>
+
+                <div class="card card-table wow fadeInUp" data-wow-delay=".6s">
+                    <div class="title">
+                        <h2>Task</h2>
+                        <p>Front-End Development</p>
+                    </div>
+                        <div class="table-content">
+                            <table>
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" name="" id="" /></td>
+                                    <td>Sign contract for <span>new projects</span> </td>
+                                    <td><button class="hvr-sweep-to-left" type="submit">Delete</button></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--------------------------------FOOTER--------------------------------->
+    <footer>
+        <div class="footer-content">
+            <p>&copy;<span id="year"></span> Creative Web| Developed by <a href="javascript:void(0)">Angelo Dorange</a>.</p>
+            <div class="text">
+                <a class="terms" href="javascript:void(0)">Terms & Conditions</a>
+                <a href="javascript:void(0)">Privacy & Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    <!--------------------------------JAVASCRIPT INCLUDE--------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
